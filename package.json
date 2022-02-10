@@ -3,10 +3,32 @@
   "version": "1.0.0",
   "description": "Automatically sync your local .feature files with the scenarios created on Cucumber Studio.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"No tests have been defined yet\""
+    "start": "node index.js",
+    "test": "jest",
+    "test:dev": "jest --watch"
   },
   "repository": "git@github.com:carlosbermejop/cucumber-feature-sync-node.git",
   "author": "Carlos Bermejo Pérez <carlosbermejop@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.0.0",
+    "dotenv": "^16.0.0",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.8.0",
+    "jest": "^27.5.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  }
 }
