@@ -1,0 +1,12 @@
+{
+  "name": "cucumber-feature-sync-node",
+  "version": "1.0.0",
+  "description": "Automatically sync your local .feature files with the scenarios created on Cucumber Studio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests have been defined yet\""
+  },
+  "repository": "git@github.com:carlosbermejop/cucumber-feature-sync-node.git",
+  "author": "Carlos Bermejo Pérez <carlosbermejop@gmail.com>",
+  "license": "MIT"
+}
