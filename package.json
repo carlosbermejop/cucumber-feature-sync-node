@@ -16,7 +16,8 @@
     "commander": "^9.0.0",
     "dotenv": "^16.0.0",
     "fs-extra": "^10.0.0",
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "esm-require-directory": "https://github.com/carlosbermejo-oup/esm-require-directory.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",

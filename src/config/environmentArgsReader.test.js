@@ -6,6 +6,7 @@ describe("environmnetArgsReader - Basic tests", () => {
     process.argv = [
       "yarn",
       "start",
+      "--cli",
       "--path",
       "path",
       "--access-token",
@@ -19,6 +20,7 @@ describe("environmnetArgsReader - Basic tests", () => {
     ];
 
     const expected = {
+      cli: true,
       path: "path",
       accessToken: "token",
       clientId: "test",

@@ -8,6 +8,7 @@ export const environmentArgsReader = () => {
   program
     .version(pckgJson.version)
     .description(pckgJson.description)
+    .option("--cli", "Provide the configuration using an interactive CLI instead of manually entering the arguments.")
     .option(
       "--path <path>",
       "Path to the root folder containing the root folder containing the .feature files (or subfolders with the files)."
